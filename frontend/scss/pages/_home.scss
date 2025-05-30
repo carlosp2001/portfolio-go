@@ -1,0 +1,34 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.section {
+  height: 100vh;
+
+  &--hero {
+    height: calc(100vh - #{variables.$navbar-height} - #{variables.$body-y-axis-padding * 2});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      width: 100%;
+      height: 59.6rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    &-text-content {
+      margin-bottom: 5rem;
+      width: 68rem;
+      display:flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    &-man-design {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
