@@ -1,0 +1,43 @@
+@use '../abstract/variables';
+@use '../base/typography';
+
+.navbar {
+  width: 100%;
+  height: variables.$navbar-height;
+  padding-bottom: variables.$body-y-axis-padding;
+  box-sizing: content-box;
+
+  &__container {
+    display: flex;
+    height: 100%;
+  }
+
+  &__logo {
+    justify-content: start;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__menu {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+  &__resume {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+
+    &-button {
+      height: 100%;
+    }
+  }
+}
