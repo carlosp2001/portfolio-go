@@ -1,0 +1,53 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  background-color: variables.$primary-white;
+  display: flex;
+  justify-content: center;
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+  //@include mixins.respond(phone) {
+  //  font-size: 50%;
+  //}
+  //
+  //@include mixins.respond(tab-land) {
+  //  font-size: 56.25%; //1 rem = 8px, 9/16 = 50%
+  //}
+  //
+  //@include mixins.respond(tab-port) {
+  //  font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  //}
+  //
+  //@include mixins.respond(phone) {
+  //  font-size: 30%; //1 rem = 8px, 8/16 = 50%
+  //}
+  //
+  //@include mixins.respond(big-desktop) {
+  //  font-size: 75%; //1rem = 12 12/16 = 75%
+  //}
+}
+
+body {
+  padding: variables.$body-y-axis-padding 0;
+  box-sizing: border-box;
+
+  @include mixins.respond(big-desktop) {
+    width: variables.$max-width;
+  }
+}
