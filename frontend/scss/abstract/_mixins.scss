@@ -1,0 +1,88 @@
+@use 'variables' as *;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+    // 600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+    // 900px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+    // 1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+    // 1800px
+  }
+}
+
+@mixin heading-h5-bold($size, $line-height) {
+  font-family: 'Sora', sans-serif;
+  font-size: $size;
+  font-weight: 700;
+  line-height: $line-height;
+  letter-spacing: -2%;
+}
+
+@mixin heading-h5-semibold($size, $line-height) {
+  font-family: 'Sora', sans-serif;
+  font-size: $size;
+  font-weight: 600;
+  line-height: $line-height;
+  letter-spacing: -2%;
+}
+
+@mixin display-text-regular($size, $line-height) {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: $size;
+  color: $primary-black;
+  letter-spacing: -2%;
+  line-height: $line-height;
+}
+
+@mixin extra-bold($size, $line-height) {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  color: $primary-black;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: -2%;
+}
+
+@mixin display-extra-bold-outlined($size, $line-height, $thickness) {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  color: $primary-white;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: -2%;
+
+  text-shadow:
+          -0.2rem -0.2rem 0 black,
+          0.2rem -0.2rem 0 black,
+          -0.2rem  0.2rem 0 black,
+          0.2rem  0.2rem 0 black;
+}
+
+@mixin paragraph-p2-regular($size, $line-height) {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  color: $zinc-500;
+  font-size: $size;
+  line-height: $line-height;
+}
