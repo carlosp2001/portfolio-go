@@ -45,8 +45,9 @@ html {
 body {
   padding: variables.$body-y-axis-padding 0;
   box-sizing: border-box;
+  width: variables.$max-width;
 
-  @include mixins.respond(big-desktop) {
-    width: variables.$max-width;
-  }
+  //@include mixins.respond(big-desktop) {
+  //  width: variables.$max-width;
+  //}
 }
