@@ -11,7 +11,7 @@
     width: 5.6rem;
     height: 5.6rem;
     border: 0.25rem solid variables.$primary-black;
-    border-radius: 15%;
+    border-radius: variables.$border-radius-primary;
   }
 
   &__link {
