@@ -1,0 +1,18 @@
+@use '../abstract/variables';
+
+.skill-card {
+  width: variables.$skill-card-size;
+  height: variables.$skill-card-size;
+  display: flex;
+  border: 0.25rem solid variables.$primary-black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: variables.$border-radius-primary;
+
+  &-image{
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
