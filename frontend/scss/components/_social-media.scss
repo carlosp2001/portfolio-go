@@ -1,0 +1,43 @@
+@use '../abstract/variables';
+
+.social-media {
+  width: 32rem;
+  height: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-item-container {
+    width: 5.6rem;
+    height: 5.6rem;
+    border: 0.25rem solid variables.$primary-black;
+    border-radius: 15%;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon-wrapper {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 50%;
+    height: 50%;
+
+    &:hover {
+      transform: translateY(-2px);
+      fill: #4078c0;
+    }
+  }
+
+}
