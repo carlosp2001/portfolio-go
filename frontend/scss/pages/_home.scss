@@ -4,33 +4,29 @@
 .section {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &__container {
-    width: 100%;
-    height: 65rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    border: 1px solid red;
-  }
-
   &--hero {
-    border: 1px solid gray;
     height: calc(100vh - #{variables.$navbar-height} - #{variables.$body-y-axis-padding * 2});
     display: flex;
     justify-content: center;
     align-items: center;
 
+    &-container {
+      height: 65rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
     &-body-content {
-      border: 1px solid red;
       width: 68rem;
-      display:flex;
+      display: flex;
       flex-direction: column;
       gap: 2rem;
       align-self: start;
@@ -51,5 +47,32 @@
       position: absolute;
       right: 0;
     }
+  }
+
+  &--skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      height: 56rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, variables.$skill-card-size);
+      grid-auto-rows: variables.$skill-card-size;
+      width: 100%;
+      column-gap: 8.65rem;
+      row-gap: 5rem;
+    }
+
   }
 }
