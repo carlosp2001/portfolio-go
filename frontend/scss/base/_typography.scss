@@ -22,5 +22,13 @@
 }
 
 .heading-h5-semibold {
-  @include mixins.heading-h5-semibold(2rem, 2.4rem);
+  @include mixins.heading-semibold(2rem, 2.4rem);
+}
+
+.heading-h4-semibold {
+  @include mixins.heading-semibold(2.4rem, 2.8rem);
+}
+
+.heading-h6-semibold {
+  @include mixins.heading-semibold(1.6rem, 2rem);
 }
