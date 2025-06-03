@@ -38,7 +38,7 @@
   letter-spacing: -2%;
 }
 
-@mixin heading-h5-semibold($size, $line-height) {
+@mixin heading-semibold($size, $line-height) {
   font-family: 'Sora', sans-serif;
   font-size: $size;
   font-weight: 600;

@@ -2,8 +2,8 @@
 @use '../abstract/mixins';
 
 .section {
-  width: 100%;
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +15,8 @@
     align-items: center;
 
     &-container {
+      width: variables.$max-width;
       height: 65rem;
-      width: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -57,7 +57,7 @@
 
     &-container {
       height: 56rem;
-      width: 100%;
+      width: variables.$max-width;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -74,5 +74,34 @@
       row-gap: 5rem;
     }
 
+  }
+
+  &--experience {
+    width: 100vw;
+    background-color: variables.$primary-black;
+
+    &-container {
+      width: variables.$max-width;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    &-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 4rem;
+    }
+
+    .display-text-regular,
+    .display-extra-bold {
+      color: variables.$primary-white;
+    }
   }
 }
