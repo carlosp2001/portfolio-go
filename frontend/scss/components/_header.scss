@@ -4,6 +4,7 @@
 .navbar {
   height: variables.$navbar-height;
   padding-bottom: variables.$body-y-axis-padding;
+  padding-top: variables.$body-y-axis-padding;
   box-sizing: content-box;
   display: flex;
   justify-content: center;
