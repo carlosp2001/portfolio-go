@@ -3,7 +3,7 @@
 
 .section {
   height: 100vh;
-  width: 100vw;
+  width: variables.$view-width-without-scrollbar;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,6 @@
 
     &-text-content {
       width: 100%;
-      border: 1px solid red;
       height: 100%;;
     }
 
@@ -51,7 +50,6 @@
 
   &--skills {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -73,11 +71,9 @@
       column-gap: 8.65rem;
       row-gap: 5rem;
     }
-
   }
 
   &--experience {
-    width: 100vw;
     background-color: variables.$primary-black;
 
     &-container {
