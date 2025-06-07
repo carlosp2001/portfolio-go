@@ -1,0 +1,22 @@
+@use '../abstract/variables';
+
+.footer {
+  width: 100%;
+  height: variables.$footer-height;
+  background-color: variables.$primary-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    width: 128rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

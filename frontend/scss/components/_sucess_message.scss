@@ -1,0 +1,15 @@
+@use '../abstract/variables';
+
+.success-message {
+  top: 5rem;
+  position: fixed;
+  display: block;
+  background-color: #4CAF50;
+  color: variables.$primary-white;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  &--hidden {
+    display: none;
+  }
+}
