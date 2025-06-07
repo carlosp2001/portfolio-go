@@ -124,4 +124,20 @@
       }
     }
   }
+
+  &--projects {
+    background-color: variables.$primary-black;
+    height: auto;
+    padding: 10rem 0;
+    &-container {
+      width: 121.6rem;
+    }
+
+    &-title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
 }
