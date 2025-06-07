@@ -33,6 +33,10 @@
   @include mixins.heading-semibold(1.6rem, 2rem);
 }
 
+.heading-h6-regular {
+  @include mixins.heading-regular(1.6rem, 2rem);
+}
+
 .heading-h2-bold {
   @include mixins.heading-bold(3.2rem, 4rem);
 }

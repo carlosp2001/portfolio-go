@@ -16,6 +16,11 @@ a {
   font-weight: inherit;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 html {
   background-color: variables.$primary-white;
   display: flex;
