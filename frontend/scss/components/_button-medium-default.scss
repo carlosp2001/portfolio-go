@@ -1,0 +1,11 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+.button-medium-default {
+  //width: 17.3rem;
+  //height:5.6rem;
+  //@include mixins.button-text-semibold(1.6rem, 2rem);
+  //color: variables.$primary-white;
+  //background-color: variables.$primary-black;
+  @include mixins.button-medium-default(17.3rem, 5.6rem, 1.6rem, 2rem)
+}

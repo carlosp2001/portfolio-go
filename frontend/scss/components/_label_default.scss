@@ -1,0 +1,18 @@
+@use '../abstract/variables';
+@use '../base/typography';
+
+.label-default {
+  width: 50rem;
+  height: 5.6rem;
+  padding: 2.4rem;
+  border: 0.1rem solid variables.$primary-black;
+  border-radius: variables.$border-radius-primary;
+  &--text-area {
+    height: 14rem;
+    resize: none;
+  }
+
+  &--error {
+    border-color: variables.$error-color;
+  }
+}

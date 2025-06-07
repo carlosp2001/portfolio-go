@@ -9,9 +9,14 @@
 
 // Components
 @use 'components/header';
+@use 'components/footer';
 @use 'components/social-media';
 @use 'components/skill-card';
 @use 'components/experience-card';
+@use 'components/project-card';
+@use 'components/label_default';
+@use 'components/button-medium-default';
+@use 'components/sucess_message';
 
 // Layouts
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carlos Pineda | Software Engineer</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
 <header class="navbar">
@@ -17,8 +18,8 @@
             <a class="navbar__menu-link heading-h5-semibold" href="#skills">Skills</a>
             <a class="navbar__menu-link heading-h5-semibold" href="#my-experience">My Experience</a>
             <a class="navbar__menu-link heading-h5-semibold" href="#about-me">About Me</a>
-            <!--            <a class="navbar__menu-link heading-h5-semibold" href="#projects">Project</a>-->
-            <!--            <a class="navbar__menu-link heading-h5-semibold" href="#contact-me">Contact Me</a>-->
+            <a class="navbar__menu-link heading-h5-semibold" href="#projects">Projects</a>
+            <a class="navbar__menu-link heading-h5-semibold" href="#contact-me">Contact Me</a>
         </nav>
         <div class="navbar__resume">
             <a href="./resources/Resume%20Carlos%20Alberto%20Pineda.pdf" target="_blank" aria-label="Download Resume">
@@ -236,18 +237,125 @@
             </div>
         </div>
     </section>
-    <!--    <section id="projects" class="section section&#45;&#45;projects">-->
+    <section id="projects" class="section section--projects">
+        <div class="section--projects-container">
+            <div class="section--projects-title">
+                <span class="display-text-regular text-white">My&nbsp;</span>
+                <span class="display-extra-bold text-white">Projects</span>
+            </div>
+            <div class="project-card">
+                <div class="project-card-layout">
+                    <div class="project-card-image" style="background-image: url('assets/assignpro-project.png');">
+                    </div>
+                </div>
+                <div class="project-card-layout">
+                    <div class="project-card-body">
+                        <span class="display-extra-bold text-white">01</span>
+                        <span class="heading-h2-bold text-white">AssignPro</span>
+                        <p class="paragraph-p2-regular">
+                            AssignPro is a microservice application tailored for managing bulk content
+                            assignments, user status updates, and learning path
+                            operations. Designed for educational or corporate training platforms, it simplifies
+                            large-scale processes by offering efficient, secure, and well-structured backend solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-layout">
+                    <div class="project-card-body">
+                        <span class="display-extra-bold text-white">02</span>
+                        <span class="heading-h2-bold text-white">OBE Next Gen</span>
+                        <p class="paragraph-p2-regular">
+                            Developed the backend for a vacation booking web application used by Beaches and Sandals.
+                            The platform enables users to manage lodging,
+                            flight reservations, and additional services.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card-layout">
+                    <div class="project-card-image" style="background-image: url('assets/obenextgen-project.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-layout">
+                    <div class="project-card-image" style="background-image: url('./assets/gofood-project.png');">
+                    </div>
+                </div>
+                <div class="project-card-layout">
+                    <div class="project-card-body">
+                        <span class="display-extra-bold text-white">03</span>
+                        <span class="heading-h2-bold text-white">GoFood</span>
+                        <p class="paragraph-p2-regular">
+                            Created an API for delivery app to monitor and manage real-time operations for food delivery
+                            platform.
+                            Includes detailed analytics panels, user statistics, and tracking of top-selling products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-layout">
+                    <div class="project-card-body">
+                        <span class="display-extra-bold text-white">04</span>
+                        <span class="heading-h2-bold text-white">Nova Casa Dashboard</span>
+                        <p class="paragraph-p2-regular">
+                            Developed a web application for real estate property management.
+                            <br>The platform enables users to manage properties, perform advanced searches,
+                            and update information in real time, optimizing sales and rental processes.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card-layout">
+                    <div class="project-card-image" style="background-image: url('./assets/novacasa-project.png');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-me" class="section section--contact-me">
+        <div id="success-message" class="success-message heading-h6-semibold success-message--hidden">
+            Message has been sent successfully.
+        </div>
+        <div class="section--contact-me-container">
+            <div class="section--contact-me-layout">
+                <input type="text" class="label-default heading-h6-regular" id="name" placeholder="Your name" required>
+                <input type="email" class="label-default heading-h6-regular" id="email" placeholder="Email" required>
+                <input type="text" class="label-default heading-h6-regular" id="subject" placeholder="Subject" required>
+                <textarea class="label-default label-default--text-area heading-h6-regular" id="message" placeholder="Message" required></textarea>
+                <button class="button-medium-default" id="submit">Get In Touch</button>
+            </div>
+            <div class="section--contact-me-layout">
+                <div class="section--contact-me-title">
+                    <div>
+                        <span class="display-extra-bold">Let's&nbsp;</span>
+                        <span class="display-extra-bold-outlined">talk&nbsp;</span>
+                        <span class="display-extra-bold">for</span>
+                    </div>
+                    <div>
+                        <span class="display-extra-bold">Something&nbsp;</span>
+                        <span class="display-extra-bold">Special</span>
+                    </div>
+                    <p class="paragraph-p2-regular">
+                        I strive to push the boundaries of software engineering by designing and building scalable, maintainable, and high-impact systems that combine technical excellence with real-world problem solving.
+                    </p>
+                </div>
+            </div>
 
-    <!--    </section>-->
-    <!--    <section id="testimonials" class="section section&#45;&#45;testimonials">-->
-
-    <!--    </section>-->
-    <!--    <section id="contact-me" class="section section&#45;&#45;contact-me">-->
-
-    <!--    </section>-->
+        </div>
+    </section>
 </main>
-<footer>
-
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./assets/footer-logo.png" alt="Footer White Logo">
+            <span class="heading-h5-bold text-white">Personal</span>
+        </div>
+        <div class="footer-copyright">
+            <p class="heading-h6-regular text-white">&copy; 2025 Carlos Alberto Pineda</p>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
