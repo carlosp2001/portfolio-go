@@ -30,7 +30,7 @@
   }
 }
 
-@mixin heading-h5-bold($size, $line-height) {
+@mixin heading-bold($size, $line-height) {
   font-family: 'Sora', sans-serif;
   font-size: $size;
   font-weight: 700;
