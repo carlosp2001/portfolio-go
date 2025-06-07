@@ -140,4 +140,30 @@
 
     }
   }
+
+  &--contact-me {
+    height: calc(100vh - #{variables.$footer-height});
+    &-container {
+      width: 128rem;
+      height: 48.4rem;
+      display: flex;
+    }
+
+    &-title {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-direction: column;
+    }
+
+    &-layout {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+
+  }
 }
