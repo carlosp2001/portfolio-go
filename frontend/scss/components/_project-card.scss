@@ -1,0 +1,33 @@
+.project-card {
+  width: 121.6rem;
+  height: 51.6rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-layout {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &-image {
+    width: 100%;
+    height: 39.7rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &-body{
+    width: 58.2rem;
+    height: 29.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
