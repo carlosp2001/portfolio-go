@@ -30,6 +30,24 @@
   }
 }
 
+@mixin button-text-semibold($size, $line-height) {
+  font-family: 'Sora', sans-serif;
+  font-size: $size;
+  font-weight: 600;
+  line-height: $line-height;
+  letter-spacing: -2%;
+
+}
+
+@mixin heading-regular($size, $line-height) {
+  font-family: 'Sora', sans-serif;
+  font-size: $size;
+  color: $zinc-500;
+  font-weight: 400;
+  line-height: $line-height;
+  letter-spacing: -2%;
+}
+
 @mixin heading-bold($size, $line-height) {
   font-family: 'Sora', sans-serif;
   font-size: $size;
@@ -72,11 +90,10 @@
   line-height: $line-height;
   letter-spacing: -2%;
 
-  text-shadow:
-          -0.2rem -0.2rem 0 black,
-          0.2rem -0.2rem 0 black,
-          -0.2rem  0.2rem 0 black,
-          0.2rem  0.2rem 0 black;
+  text-shadow: -0.2rem -0.2rem 0 black,
+  0.2rem -0.2rem 0 black,
+  -0.2rem 0.2rem 0 black,
+  0.2rem 0.2rem 0 black;
 }
 
 @mixin paragraph-p2-regular($size, $line-height) {
@@ -85,4 +102,14 @@
   color: $zinc-500;
   font-size: $size;
   line-height: $line-height;
+}
+
+@mixin button-medium-default($width, $height, $text-size, $text-line-height) {
+  border: none;
+  border-radius: $border-radius-primary;
+  width: $width;
+  height:$height;
+  @include button-text-semibold($text-size, $text-line-height);
+  color: $primary-white;
+  background-color: $primary-black;
 }
