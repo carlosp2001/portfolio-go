@@ -18,7 +18,7 @@
 }
 
 .heading-h5-bold {
-  @include mixins.heading-h5-bold(2rem, 2.4rem);
+  @include mixins.heading-bold(2rem, 2.4rem);
 }
 
 .heading-h5-semibold {
@@ -31,4 +31,12 @@
 
 .heading-h6-semibold {
   @include mixins.heading-semibold(1.6rem, 2rem);
+}
+
+.heading-h2-bold {
+  @include mixins.heading-bold(3.2rem, 4rem);
+}
+
+.text-white {
+  color: variables.$primary-white;
 }
