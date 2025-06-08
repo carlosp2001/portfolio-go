@@ -50,7 +50,19 @@
       @include mixins.respond(phone) {
         position: relative;
         order: 2;
+        gap: 1rem;
         width: 100%;
+        .display-text-regular {
+          font-size: 3.2rem;
+        }
+
+        .display-extra-bold {
+          font-size: 3.2rem;
+        }
+
+        .display-extra-bold-outlined {
+          font-size: 3.2rem;
+        }
       }
     }
 
@@ -97,7 +109,7 @@
     justify-content: center;
     align-items: center;
     @include mixins.respond(phone) {
-      height: 100vh;
+      height: auto;
     }
 
     &-container {
@@ -122,11 +134,19 @@
       row-gap: 5rem;
       justify-content: center;
 
+      @include mixins.respond(phone) {
+        column-gap: 4rem;
+        row-gap: 4rem;
+      }
     }
   }
 
   &--experience {
     background-color: variables.$primary-black;
+
+    @include mixins.respond(phone) {
+      height: auto;
+    }
 
     &-container {
       width: variables.$max-width;
@@ -135,6 +155,16 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
+      position: relative;
+
+      @include mixins.respond(tab-port) {
+        width: 90rem;
+      }
+
+      @include mixins.respond(phone) {
+        width: 100%;
+        height: auto;
+      }
     }
 
     &-grid {
