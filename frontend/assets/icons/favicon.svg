@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="90" fill="#000000"/>
+  
+  <!-- Iniciales CP en estilo de código -->
+  <text x="100" y="125" font-family="monospace, 'Courier New', Courier" font-size="80" font-weight="bold" text-anchor="middle" fill="#FFF">CP</text>
+  
+  <!-- Borde decorativo que simula un bracket de código -->
+  <path d="M50,50 L40,50 L40,150 L50,150" stroke="#FFF" stroke-width="6" fill="none"/>
+  <path d="M150,50 L160,50 L160,150 L150,150" stroke="#FFF" stroke-width="6" fill="none"/>
+  
+  <!-- Detalles que emulan código -->
+  <line x1="60" y1="170" x2="140" y2="170" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="1,5"/>
+  <line x1="60" y1="30" x2="140" y2="30" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="1,5"/>
+</svg>
