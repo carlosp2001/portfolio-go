@@ -11,19 +11,29 @@
 <header class="navbar">
     <div class="navbar__container">
         <div class="navbar__logo">
-            <img class="navbar__logo-img" src="./assets/header-logo.svg" alt="Header Logo">
+            <img class="navbar__logo-img"
+                 src="./assets/header-logo.svg" alt="Header Logo">
             <span class="heading-h5-bold">Personal</span>
         </div>
-        <nav class="navbar__menu" aria-label="Primary navigation">
-            <a class="navbar__menu-link heading-h5-semibold" href="#skills">Skills</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#my-experience">My Experience</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#about-me">About Me</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#projects">Projects</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#contact-me">Contact Me</a>
+        <nav class="navbar__menu"
+             aria-label="Primary navigation">
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#skills">Skills</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#my-experience">My Experience</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#about-me">About Me</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#projects">Projects</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#contact-me">Contact Me</a>
         </nav>
         <div class="navbar__resume">
-            <a href="./resources/Resume%20Carlos%20Alberto%20Pineda.pdf" target="_blank" aria-label="Download Resume">
-                <img class="navbar__resume-button" src="./assets/download-resume-button.svg"
+            <a href="./resources/Resume%20Carlos%20Alberto%20Pineda.pdf"
+               target="_blank"
+               aria-label="Download Resume">
+                <img class="navbar__resume-button"
+                     src="./assets/download-resume-button.svg"
                      alt="Download Resume Button">
             </a>
         </div>
@@ -319,48 +329,68 @@
             </div>
         </div>
     </section>
-    <!--    <section id="contact-me" class="section section&#45;&#45;contact-me">-->
-    <!--        <div id="success-message" class="success-message heading-h6-semibold success-message&#45;&#45;hidden">-->
-    <!--            Message has been sent successfully.-->
-    <!--        </div>-->
-    <!--        <div class="section&#45;&#45;contact-me-container">-->
-    <!--            <div class="section&#45;&#45;contact-me-layout">-->
-    <!--                <input type="text" class="label-default heading-h6-regular" id="name" placeholder="Your name" required>-->
-    <!--                <input type="email" class="label-default heading-h6-regular" id="email" placeholder="Email" required>-->
-    <!--                <input type="text" class="label-default heading-h6-regular" id="subject" placeholder="Subject" required>-->
-    <!--                <textarea class="label-default label-default&#45;&#45;text-area heading-h6-regular" id="message" placeholder="Message" required></textarea>-->
-    <!--                <button class="button-medium-default" id="submit">Get In Touch</button>-->
-    <!--            </div>-->
-    <!--            <div class="section&#45;&#45;contact-me-layout">-->
-    <!--                <div class="section&#45;&#45;contact-me-title">-->
-    <!--                    <div>-->
-    <!--                        <span class="display-extra-bold">Let's&nbsp;</span>-->
-    <!--                        <span class="display-extra-bold-outlined">talk&nbsp;</span>-->
-    <!--                        <span class="display-extra-bold">for</span>-->
-    <!--                    </div>-->
-    <!--                    <div>-->
-    <!--                        <span class="display-extra-bold">Something&nbsp;</span>-->
-    <!--                        <span class="display-extra-bold">Special</span>-->
-    <!--                    </div>-->
-    <!--                    <p class="paragraph-p2-regular">-->
-    <!--                        I strive to push the boundaries of software engineering by designing and building scalable, maintainable, and high-impact systems that combine technical excellence with real-world problem solving.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
+    <section id="contact-me"
+             class="section section--contact-me">
+        <div id="success-message"
+             class="success-message heading-h6-semibold success-message--hidden">
+            Message has been sent successfully.
+        </div>
+        <div class="section--contact-me-container">
+            <div class="section--contact-me-form-container">
+                <form class="contact-form" id="contact-form">
+                    <input type="text"
+                           class="label-default heading-h6-regular" id="name"
+                           placeholder="Your name"
+                           required>
+                    <input type="email"
+                           class="label-default heading-h6-regular"
+                           id="email"
+                           placeholder="Email"
+                           required>
+                    <input type="text"
+                           class="label-default heading-h6-regular"
+                           id="subject"
+                           placeholder="Subject"
+                           required>
+                    <textarea class="label-default label-default--text-area heading-h6-regular"
+                              id="message"
+                              placeholder="Message"
+                              required></textarea>
+                    <button class="button-medium-default" id="submit">Get In Touch</button>
+                </form>
+            </div>
 
-    <!--        </div>-->
-    <!--    </section>-->
+            <div class="section--contact-me-title">
+                <div>
+                    <span class="display-extra-bold">Let's&nbsp;</span>
+                    <span class="display-extra-bold-outlined">talk&nbsp;</span>
+                    <span class="display-extra-bold">for</span>
+                </div>
+                <div>
+                    <span class="display-extra-bold">Something&nbsp;</span>
+                    <span class="display-extra-bold">Special</span>
+                </div>
+                <p class="paragraph-p2-regular">
+                    I strive to push the boundaries of software engineering by designing and building scalable,
+                    maintainable, and high-impact systems that combine technical excellence with real-world
+                    problem solving.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
 </main>
-<!--<footer class="footer">-->
-<!--    <div class="footer-container">-->
-<!--        <div class="footer-logo">-->
-<!--            <img src="./assets/footer-logo.png" alt="Footer White Logo">-->
-<!--            <span class="heading-h5-bold text-white">Personal</span>-->
-<!--        </div>-->
-<!--        <div class="footer-copyright">-->
-<!--            <p class="heading-h6-regular text-white">&copy; 2025 Carlos Alberto Pineda</p>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./assets/footer-logo.png" alt="Footer White Logo">
+            <span class="heading-h5-bold text-white">Personal</span>
+        </div>
+        <div class="footer-copyright">
+            <p class="heading-h6-regular text-white">&copy; 2025 Carlos Alberto Pineda</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
