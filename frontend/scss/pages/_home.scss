@@ -184,12 +184,45 @@
   }
 
   &--about-me {
+    @include mixins.respond(phone) {
+      height: auto;
+    }
     &-container {
       width: 128rem;
       height: 57.2rem;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      justify-items: center;
+      @include mixins.respond(phone) {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 5rem;
+      }
+    }
+
+    &-design {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mixins.respond(phone) {
+        order: 1;
+        width: 100%;
+      }
+    }
+
+    &-image {
+      height: 100%;
+
+      @include mixins.respond(phone) {
+        width: 100%;
+        height: auto;
+      }
+
+      @include mixins.respond(tab-port) {
+        height: 50%;
+      }
     }
 
     &-body {
@@ -198,6 +231,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+      @include mixins.respond(phone) {
+        order: 2;
+        width: 100%;
+        gap: 5rem;
+      }
+
       &-text {
         display: flex;
         justify-content: space-between;
