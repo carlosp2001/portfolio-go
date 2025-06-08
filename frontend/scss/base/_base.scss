@@ -36,7 +36,7 @@ html {
   }
 
   @include mixins.respond(phone) {
-    font-size: 39%; //1 rem = 8px, 8/16 = 50%
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
   @include mixins.respond(big-desktop) {
