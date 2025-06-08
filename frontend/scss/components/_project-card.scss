@@ -1,10 +1,22 @@
+@use '../abstract/mixins';
+
 .project-card {
-  width: 121.6rem;
+  width: 100%;
   height: 51.6rem;
   display: flex;
   gap: 3rem;
   flex-direction: row;
   justify-content: space-between;
+
+
+  @include mixins.respond(tab-port) {
+    height: 60rem;
+  }
+
+  @include mixins.respond(phone) {
+    flex-direction: column;
+    height:auto;
+  }
 
   &-layout {
     flex: 1;
@@ -12,6 +24,23 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include mixins.respond(phone) {
+      width: 100%;
+      height: auto;
+      flex: none;
+    }
+
+    &-image {
+      @include mixins.respond(phone) {
+        order: 1;
+      }
+    }
+
+    &-body {
+      @include mixins.respond(phone) {
+        order: 2;
+      }
+    }
   }
 
   &-image {
@@ -29,5 +58,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mixins.respond(tab-port) {
+      height: 35rem;
+    }
+
+    @include mixins.respond(phone) {
+      width: 100%;
+      height: auto;
+      gap: 2rem;
+    }
   }
 }

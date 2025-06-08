@@ -1,4 +1,5 @@
 @use '../abstract/variables';
+@use '../abstract/mixins';
 
 .footer {
   width: 100%;
@@ -7,6 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mixins.respond(phone) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   &-container {
     width: 128rem;
     display: flex;

@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         validateInput(messageInput);
     })
 
-    function sendEmail() {
+    function sendEmail(event) {
+        event.preventDefault();
         const name = nameInput.value;
         const email = emailInput.value;
         const subject = subjectInput.value;

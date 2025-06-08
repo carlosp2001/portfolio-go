@@ -11,19 +11,29 @@
 <header class="navbar">
     <div class="navbar__container">
         <div class="navbar__logo">
-            <img class="navbar__logo-img" src="./assets/header-logo.svg" alt="Header Logo">
+            <img class="navbar__logo-img"
+                 src="./assets/header-logo.svg" alt="Header Logo">
             <span class="heading-h5-bold">Personal</span>
         </div>
-        <nav class="navbar__menu" aria-label="Primary navigation">
-            <a class="navbar__menu-link heading-h5-semibold" href="#skills">Skills</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#my-experience">My Experience</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#about-me">About Me</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#projects">Projects</a>
-            <a class="navbar__menu-link heading-h5-semibold" href="#contact-me">Contact Me</a>
+        <nav class="navbar__menu"
+             aria-label="Primary navigation">
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#skills">Skills</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#my-experience">My Experience</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#about-me">About Me</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#projects">Projects</a>
+            <a class="navbar__menu-link heading-h5-semibold"
+               href="#contact-me">Contact Me</a>
         </nav>
         <div class="navbar__resume">
-            <a href="./resources/Resume%20Carlos%20Alberto%20Pineda.pdf" target="_blank" aria-label="Download Resume">
-                <img class="navbar__resume-button" src="./assets/download-resume-button.svg"
+            <a href="./resources/Resume%20Carlos%20Alberto%20Pineda.pdf"
+               target="_blank"
+               aria-label="Download Resume">
+                <img class="navbar__resume-button"
+                     src="./assets/download-resume-button.svg"
                      alt="Download Resume Button">
             </a>
         </div>
@@ -79,7 +89,7 @@
                 </div>
             </div>
             <div class="section--hero-man-design">
-                <img src="./assets/man%20svg.svg" alt="Man with Computer Design">
+                <img class="section--hero-man-design-image" src="./assets/man%20svg.svg" alt="Man with Computer Design">
             </div>
         </div>
 
@@ -144,8 +154,10 @@
                 <div class="experience-card">
                     <div class="experience-card-container">
                         <div class="experience-card-header">
-                            <img class="experience-card-image" src="./assets/codeexitos.png" alt="Code Éxitos Logo">
-                            <span class="heading-h4-semibold experience-card-header-title">LMS Software Developer</span>
+                            <div class="experience-card-header-logo-container">
+                                <img class="experience-card-image" src="./assets/codeexitos.png" alt="Code Éxitos Logo">
+                                <span class="heading-h4-semibold experience-card-header-title">LMS Software Developer</span>
+                            </div>
                             <span class="heading-h6-semibold experience-card-header-time-working">Aug 2024 - Present</span>
                         </div>
                         <div class="experience-card-body">
@@ -162,8 +174,11 @@
                 <div class="experience-card">
                     <div class="experience-card-container">
                         <div class="experience-card-header">
-                            <img class="experience-card-image" src="./assets/sanservices.png" alt="San Services Logo">
-                            <span class="heading-h4-semibold experience-card-header-title">Software Engineer</span>
+                            <div class="experience-card-header-logo-container">
+                                <img class="experience-card-image" src="./assets/sanservices.png"
+                                     alt="San Services Logo">
+                                <span class="heading-h4-semibold experience-card-header-title">Software Engineer</span>
+                            </div>
                             <span class="heading-h6-semibold experience-card-header-time-working">Nov 2023 - Aug 2024</span>
                         </div>
                         <div class="experience-card-body">
@@ -171,17 +186,17 @@
                                 Developed backend systems ensuring high performance, reliability, and scalability across
                                 core services. Designed and implemented RESTful APIs using Spring Boot, enabling
                                 efficient and secure communication between client and server. Integrated third-party
-                                APIs to automate and streamline key business processes. Focused on clean, modular
-                                architecture to support long-term maintainability. Applied principles of Clean
-                                Architecture and SOLID design to enhance code quality and facilitate testing.
+                                APIs to automate and streamline key business processes.
                         </div>
                     </div>
                 </div>
                 <div class="experience-card">
                     <div class="experience-card-container">
                         <div class="experience-card-header">
-                            <img class="experience-card-image" src="./assets/onetouch.png" alt="One Touch Logo">
-                            <span class="heading-h4-semibold experience-card-header-title">Back End Developer</span>
+                            <div class="experience-card-header-logo-container">
+                                <img class="experience-card-image" src="./assets/onetouch.png" alt="One Touch Logo">
+                                <span class="heading-h4-semibold experience-card-header-title">Back End Developer</span>
+                            </div>
                             <span class="heading-h6-semibold experience-card-header-time-working">Sep 2023 - Jun 2024</span>
                         </div>
                         <div class="experience-card-body">
@@ -200,7 +215,7 @@
     <section id="about-me" class="section section--about-me">
         <div class="section--about-me-container">
             <div class="section--about-me-design">
-                <img src="./assets/boy-picture.png" alt="Design of Carlos">
+                <img src="./assets/boy-picture.png" class="section--about-me-image" alt="Design of Carlos">
             </div>
             <div class="section--about-me-body">
                 <div>
@@ -244,11 +259,11 @@
                 <span class="display-extra-bold text-white">Projects</span>
             </div>
             <div class="project-card">
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-image">
                     <div class="project-card-image" style="background-image: url('assets/assignpro-project.png');">
                     </div>
                 </div>
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-body">
                     <div class="project-card-body">
                         <span class="display-extra-bold text-white">01</span>
                         <span class="heading-h2-bold text-white">AssignPro</span>
@@ -262,7 +277,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-body">
                     <div class="project-card-body">
                         <span class="display-extra-bold text-white">02</span>
                         <span class="heading-h2-bold text-white">OBE Next Gen</span>
@@ -273,17 +288,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-image">
                     <div class="project-card-image" style="background-image: url('assets/obenextgen-project.png');">
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-image">
                     <div class="project-card-image" style="background-image: url('./assets/gofood-project.png');">
                     </div>
                 </div>
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-body">
                     <div class="project-card-body">
                         <span class="display-extra-bold text-white">03</span>
                         <span class="heading-h2-bold text-white">GoFood</span>
@@ -296,7 +311,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-body">
                     <div class="project-card-body">
                         <span class="display-extra-bold text-white">04</span>
                         <span class="heading-h2-bold text-white">Nova Casa Dashboard</span>
@@ -307,41 +322,61 @@
                         </p>
                     </div>
                 </div>
-                <div class="project-card-layout">
+                <div class="project-card-layout project-card-layout-image">
                     <div class="project-card-image" style="background-image: url('./assets/novacasa-project.png');">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact-me" class="section section--contact-me">
-        <div id="success-message" class="success-message heading-h6-semibold success-message--hidden">
+    <section id="contact-me"
+             class="section section--contact-me">
+        <div id="success-message"
+             class="success-message heading-h6-semibold success-message--hidden">
             Message has been sent successfully.
         </div>
         <div class="section--contact-me-container">
-            <div class="section--contact-me-layout">
-                <input type="text" class="label-default heading-h6-regular" id="name" placeholder="Your name" required>
-                <input type="email" class="label-default heading-h6-regular" id="email" placeholder="Email" required>
-                <input type="text" class="label-default heading-h6-regular" id="subject" placeholder="Subject" required>
-                <textarea class="label-default label-default--text-area heading-h6-regular" id="message" placeholder="Message" required></textarea>
-                <button class="button-medium-default" id="submit">Get In Touch</button>
+            <div class="section--contact-me-form-container">
+                <form class="contact-form" id="contact-form">
+                    <input type="text"
+                           class="label-default heading-h6-regular" id="name"
+                           placeholder="Your name"
+                           required>
+                    <input type="email"
+                           class="label-default heading-h6-regular"
+                           id="email"
+                           placeholder="Email"
+                           required>
+                    <input type="text"
+                           class="label-default heading-h6-regular"
+                           id="subject"
+                           placeholder="Subject"
+                           required>
+                    <textarea class="label-default label-default--text-area heading-h6-regular"
+                              id="message"
+                              placeholder="Message"
+                              required></textarea>
+                    <button class="button-medium-default" id="submit">Get In Touch</button>
+                </form>
             </div>
-            <div class="section--contact-me-layout">
-                <div class="section--contact-me-title">
-                    <div>
-                        <span class="display-extra-bold">Let's&nbsp;</span>
-                        <span class="display-extra-bold-outlined">talk&nbsp;</span>
-                        <span class="display-extra-bold">for</span>
-                    </div>
-                    <div>
-                        <span class="display-extra-bold">Something&nbsp;</span>
-                        <span class="display-extra-bold">Special</span>
-                    </div>
-                    <p class="paragraph-p2-regular">
-                        I strive to push the boundaries of software engineering by designing and building scalable, maintainable, and high-impact systems that combine technical excellence with real-world problem solving.
-                    </p>
+
+            <div class="section--contact-me-title">
+                <div>
+                    <span class="display-extra-bold">Let's&nbsp;</span>
+                    <span class="display-extra-bold-outlined">talk&nbsp;</span>
+                    <span class="display-extra-bold">for</span>
                 </div>
+                <div>
+                    <span class="display-extra-bold">Something&nbsp;</span>
+                    <span class="display-extra-bold">Special</span>
+                </div>
+                <p class="paragraph-p2-regular">
+                    I strive to push the boundaries of software engineering by designing and building scalable,
+                    maintainable, and high-impact systems that combine technical excellence with real-world
+                    problem solving.
+                </p>
             </div>
+
 
         </div>
     </section>
