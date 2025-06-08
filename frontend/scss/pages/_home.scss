@@ -17,6 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mixins.respond(phone) {
+      height: auto;
+    }
 
     &-container {
       width: variables.$max-width;
@@ -120,9 +123,6 @@
       align-items: center;
       position: relative;
       gap: 4rem;
-      @include mixins.respond(phone) {
-        height: 100%;
-      }
     }
 
     &-grid {
@@ -135,7 +135,7 @@
       justify-content: center;
 
       @include mixins.respond(phone) {
-        column-gap: 4rem;
+        column-gap: 2rem;
         row-gap: 4rem;
       }
     }
