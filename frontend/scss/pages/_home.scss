@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mixins.respond(phone) {
+    padding: 2rem;
+  }
+
 
   &--hero {
     height: calc(100vh - #{variables.$navbar-height} - #{variables.$body-y-axis-padding * 2});
@@ -22,6 +26,11 @@
       flex-direction: column;
       align-items: center;
       position: relative;
+      @include mixins.respond(phone) {
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+      }
     }
 
     &-body-content {
@@ -30,6 +39,19 @@
       flex-direction: column;
       gap: 2rem;
       align-self: start;
+      @include mixins.respond(tab-land) {
+        width: 65rem;
+      }
+
+      @include mixins.respond(tab-port) {
+        width: 50rem;
+      }
+
+      @include mixins.respond(phone) {
+        position: relative;
+        order: 2;
+        width: 100%;
+      }
     }
 
     &-text-content {
@@ -40,11 +62,33 @@
     &-social-media {
       position: absolute;
       bottom: 0;
+      @include mixins.respond(phone) {
+        position: relative;
+      }
     }
 
     &-man-design {
       position: absolute;
       right: 0;
+
+      &-image{
+        width: 100%;
+        height: 100%;
+      }
+
+      @include mixins.respond(tab-land) {
+        width: 80rem;
+      }
+
+      @include mixins.respond(tab-port) {
+        width: 45rem;
+      }
+
+      @include mixins.respond(phone) {
+        width: 100%;
+        position: relative;
+        order: 1;
+      }
     }
   }
 
@@ -52,15 +96,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mixins.respond(phone) {
+      height: 100vh;
+    }
 
     &-container {
-      height: 56rem;
       width: variables.$max-width;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-direction: column;
       align-items: center;
       position: relative;
+      gap: 4rem;
+      @include mixins.respond(phone) {
+        height: 100%;
+      }
     }
 
     &-grid {
@@ -70,6 +120,8 @@
       width: 100%;
       column-gap: 8.65rem;
       row-gap: 5rem;
+      justify-content: center;
+
     }
   }
 
