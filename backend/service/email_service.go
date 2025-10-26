@@ -15,8 +15,8 @@ func SendEmail(form _struct.ContactForm) error {
 	params := resend.SendEmailRequest{
 		From:    "Portfolio Website <onboarding@resend.dev>",
 		To:      []string{to},
-		Subject: "New message from website",
-		Html:    "<h2>New message from website</h1><p>" + form.Message + "</p>",
+		Subject: "New message from website " + form.Email,
+		Html:    "<h2>New message from website: " + form.Email + "</h1><p>" + form.Message + "</p>",
 	}
 
 	sent, err := client.Emails.Send(&params)
