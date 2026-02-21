@@ -1,11 +1,9 @@
-# Variables
 SASS = sass
 SASS_SRC = frontend/scss
 SASS_DEST = frontend/css
 GO_APP = backend/main.go
 PORT = 8080
 
-# Comandos
 .PHONY: help dev build run sass clean
 
 help:
@@ -21,6 +19,7 @@ sass:
 
 dev:
 	@echo "Iniciando entorno de desarrollo..."
+	@echo "Corriendo en puerto ${PORT}"
 	@$(SASS) --watch $(SASS_SRC):$(SASS_DEST) &
 	go run $(GO_APP)
 
